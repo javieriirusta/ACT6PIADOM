@@ -1,0 +1,103 @@
+body {
+    text-align: center;
+    font-family: "Roboto Slab", serif;
+    background-color: rgb(161, 68, 68);
+    color: white;
+    opacity: 0;
+    transition: opacity 1s;
+}
+#todo {
+    font-family: "Roboto Slab", serif;
+    border-radius: 10px;
+    padding: 10px;
+    border-style: dashed;
+    border-color: white;
+    background-color: rgb(161, 68, 68);
+    color: white;
+    text-align: center;
+}
+#todo::placeholder {
+    color: rgb(255, 255, 255);
+  }
+#botonEnviar {
+    font-family: "Roboto Slab", serif;
+    font-weight: bold;
+    background-color: brown;
+    color: white;
+    border-color: white;
+    border-radius: 10px;
+    border-style: solid;
+    padding: 10px;
+}
+#todo-list {
+    position:relative;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 15%;
+}
+#todo-list li{
+    padding: 10px;
+    width: 100%;
+    border-style: dashed;
+    border-radius: 10px;
+    margin: 10px;
+    list-style: none;
+    word-wrap:break-word;
+}
+#botonesList {
+    right: 0px;
+}
+#botonesList button {
+    font-family: "Roboto Slab", serif;
+    font-weight: bolder;
+    font-size: medium;
+    border-style: none;
+    background-color: rgb(161, 68, 68);
+    color: white;
+}
+#titulo2 {
+    font-weight: bolder;
+}
+#miniContainer {
+    font-size: small;
+    position:relative;
+    right: 0px;
+    bottom: 0px;
+    padding: 10px;
+}
+#cosasHechas {
+    border-style: dashed;
+    border-radius: 10px;
+    text-decoration: line-through;
+    font-weight:lighter;
+    margin: 0 auto;
+    width: 40%;
+}
+#cosasHechas li{
+    list-style: none;
+    word-wrap:break-word;
+    margin: 10px;
+}
+#botonLimpiarHecho {
+    margin-top: 10px;
+    font-family: "Roboto Slab", serif;
+    font-weight: bolder;
+    font-size: smaller;
+    border-style: dashed;
+    border-color: white;
+    background-color: rgb(161, 68, 68);
+    color: white;
+    border-radius: 5px;
+}
+
+
+@media (max-width:900px) {
+   #todo-list li{ 
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+#cosasHechas {
+    width: 50%;
+}
+    }
